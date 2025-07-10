@@ -7,7 +7,7 @@ import random
 
 # ✅ Load environment variables
 load_dotenv()
-token = os.getenv("DISCORD_TOKEN")
+token = os.environ['discordkey']
 
 # ✅ Set up logging
 handler = logging.FileHandler(filename='discord.log', encoding='utf-8', mode='w')
